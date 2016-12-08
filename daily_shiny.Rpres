@@ -40,16 +40,16 @@ Talk about some very different use cases for Shiny
 - Minnier et al.: https://kcvi.shinyapps.io/START/
 - Population Genetic Simulations: https://cjbattey.shinyapps.io/driftR/
 - How to share your Shiny app: http://blog.revolutionanalytics.com/2015/02/sharing-your-shiny-apps-1.html
-- Many, many goodies out there
+- Many, many goodies out there (if you have the time to find them)
 
 2. Data acquision
 ========================================================
-- OCR an image and get a word cloud: http://5.100.228.219:3838/sample-apps/OCRimage/
 - Point and click to select colums from a data frame: https://edwinth.github.io/blog/column-selecter/
-+ **datapasta** - Keyboard shortcuts to paste clipboard data as nice vectors/tibbles.
+![For super-wide data frames](col_sel_screenshot.png)
 
-Data pasta: Making Casual Data Grabbing easier
+2. Data pasta: Making Casual Data acquisition easier
 ==============
++ **datapasta** - Keyboard shortcuts to paste clipboard data as nice vectors/tibbles.
 ![Making Casual Data Grabbing easier](tribble_paste.gif)
 
 3. Use Gadgets and Addins
@@ -62,13 +62,13 @@ Data pasta: Making Casual Data Grabbing easier
 + **addinslist** - (Naturally) a way to browse and instal AddIns
 + **copydat** - Copy a data.frame to the clipboard
 
-Exploration should be as easy as...
+4. Exploration should be as easy as...
 ========
 
 ![alt text](NewShinyWebAppDialog.jpg)
 - Cheat sheet: https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf
 
-An add-in that produces R code!
+4. An add-in that produces R code!
 =================
 (Discovered **limoaddin** at 3:17 pm today)
 
@@ -78,7 +78,7 @@ theme_bw()
 ![Scavenger hunt](limoaddin.png)
 
 
-Exploratory analysis should always include
+4. Exploratory analysis should always include
 ================
 at a minimum...
 - Looking at distributions (histograms)
