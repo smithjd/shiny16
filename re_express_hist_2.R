@@ -17,8 +17,8 @@ histui <- fluidPage(
                     value = 1),
         sliderInput("bins",
                     "Select Bin Width:",
-                    min = .1,
-                    max = 10,
+                    min = .01,
+                    max = 1,
                     value = 2)
       ),
       # Show a plot of the generated distribution
@@ -33,13 +33,14 @@ histserver <- function(input, output) {
   library(ggplot2)
   library(tidyverse)
   plot_data <- reactive({
-    re_expressed <- data_frame(constant = 1, to_plot = (faithful$waiting ^ input$raiser_power ))
-    mean_time_val <-  mean(re_expressed$to_plot)
-    median_time_val <-  median(re_expressed$to_plot)
-    re_expressed <- re_expressed %>% mutate(
-    mean_time = mean_time_val,
-    median_time = median_time_val
-    )
+    re_expressed <- data_frame(constant = 1, to_plot = log(faithful$waiting))
+    # re_expressed <- data_frame(constant = 1, to_plot = (faithful$waiting ^ input$raiser_power ))
+    # mean_time_val <-  mean(re_expressed$to_plot)
+    # median_time_val <-  median(re_expressed$to_plot)
+    # re_expressed <- re_expressed %>% mutate(
+    # mean_time = mean_time_val,
+    # median_time = median_time_val
+    # )
     return(re_expressed)
   })
   # vline_labels <- paste0("Mean (red): ", round(mean_time, 2), "; Median (green): ", round(median_time, 2))

@@ -11,23 +11,23 @@ John David Smith
 Shiny Dawns On Me
 ===================
 - R is **all** about (reproducibly) touching and fiddling with your data to think about it
-- Conway talk: letting the bosses fiddle to verify data and algorithim
+- Conway talk: letting the bosses fiddle to verify data and algorithm
 - Hadley's talk at Reed College where a model's residuals point to war and famine in Africa
 - Roger Peng podcast remark that his students **start** exploration using Shiny (although he doesn't)
 - Cost of R: it's a (raplidy) moving target
  + dplyr is less than 2 years old but I'm **always** using it now
  + Effort to think of Shiny as an ordinary, everyday tool
 
-R changes every day
+Keeping up with R is a daily task
 ========
 ![Keeping up with R is hard!](rstats-statistic.jpg)
 
-Closing the loop every day
+Using ONE tool for the entire process
 ==============
 ![Pay attention to our workflow!](Wiston-rethink-it.jpg)
 (Thanks, Winston and Hadley!)
 
-Today's focus
+My pitch
 ========================================================
 Talk about some very different use cases for Shiny
 - Communicating complex issues to the public
@@ -36,7 +36,7 @@ Talk about some very different use cases for Shiny
 
 1. To Communicate (with an Audience)
 ========================================================
-Examples:
+ Examples:
 - Minnier et al.: https://kcvi.shinyapps.io/START/
 - Population Genetic Simulations: https://cjbattey.shinyapps.io/driftR/
 - How to share your Shiny app: http://blog.revolutionanalytics.com/2015/02/sharing-your-shiny-apps-1.html
@@ -52,26 +52,31 @@ Data pasta: Making Casual Data Grabbing easier
 ==============
 ![Making Casual Data Grabbing easier](tribble_paste.gif)
 
-Generally
+3. Use Gadgets and Addins
 ============
 - Shiny gadgets: http://shiny.rstudio.com/articles/gadgets.html
 - Rstudio add-ins: https://github.com/daattali/addinslist
-
-Notable Addins
-===================
- https://github.com/daattali/addinslist
-
 + **colorpickr** - Lets you easily select colours
 + **ggThemeAssist** - Customize your ggplot theme
 + **tidyshiny** - Interactively build tidyr function call (gather)
 + **addinslist** - (Naturally) a way to browse and instal AddIns
 + **copydat** - Copy a data.frame to the clipboard
 
-Exploration should be easy
+Exploration should be as easy as...
 ========
 
 ![alt text](NewShinyWebAppDialog.jpg)
 - Cheat sheet: https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf
+
+An add-in that produces R code!
+=================
+(Discovered **limoaddin** at 3:17 pm today)
+
+ ggplot(data = re_expressed, aes(x = to_plot)) +
+geom_histogram(aes(y = ..density..), bins = 30) +
+theme_bw()
+![Scavenger hunt](limoaddin.png)
+
 
 Exploratory analysis should always include
 ================
@@ -81,6 +86,5 @@ at a minimum...
 
 But doing it with Shiny is **not** so easy...
 
-Maybe it's already out there
-=================
-![Scavenger hunt](limoaddin.png)
+(and my attempts are out there but I won't show them tonight!)
+
