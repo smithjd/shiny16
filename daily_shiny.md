@@ -5,34 +5,34 @@ John David Smith
 - The name **Shiny** always sounded bit frivolous
 - But now I'm convinced that it's an everyday tool
 - Using it every day different from creating Shiny apps
-- I have one minimum (barely) viable example
- https://github.com/smithjd/shiny16
+- I worked on (barely) viable example and learned a lot!
 
 Shiny Dawns On Me
 ===================
-- R is **all** about (reproducibly) touching and fiddling with your data to think about it
-- Conway talk: letting the bosses fiddle to verify data and algorithm
+- R is **all** about touching and fiddling with your data to think about it (reproducibly)
+ + So Shiny fits right in!
+- Conway talk: letting the bosses play to verify data and algorithm
 - Hadley's talk at Reed College where a model's residuals point to war and famine in Africa
 - Roger Peng podcast remark that his students **start** exploration using Shiny (although he doesn't)
-- Cost of R: it's a (raplidy) moving target
+- Fact of life with R: it's a (raplidy) moving river
  + dplyr is less than 2 years old but I'm **always** using it now
- + Effort to think of Shiny as an ordinary, everyday tool
+ + I'm making an effort to think of Shiny as an ordinary, everyday tool
 
-Keeping up with R is a daily task
+The River is not only fast, but deep
 ========
 ![Keeping up with R is hard!](rstats-statistic.jpg)
 
-Using ONE tool for the entire process
+The River is BROAD: from import to communicate
 ==============
 ![Pay attention to our workflow!](Wiston-rethink-it.jpg)
 (Thanks, Winston and Hadley!)
 
 My pitch
 ========================================================
-Talk about some very different use cases for Shiny
-- Communicating complex issues to the public
-- Making everyday R activities more interactive
-- Informal exploratory analysis
+Distingish between very different use cases for Shiny
+- Communicating complex issues to the public (other folks)
+- Making everyday R activities more interactive (this talk)
+- Ad hoc exploratory analysis (not there yet)
 
 1. To Communicate (with an Audience)
 ========================================================
@@ -47,12 +47,12 @@ Talk about some very different use cases for Shiny
 - Point and click to select colums from a data frame: https://edwinth.github.io/blog/column-selecter/
 ![For super-wide data frames](col_sel_screenshot.png)
 
-2. Data pasta: Making Casual Data acquisition easier
+2. Datapasta: a keyboard shortcut to paste from the clipboard
 ==============
-+ **datapasta** - Keyboard shortcuts to paste clipboard data as nice vectors/tibbles.
++ **datapasta** - Making casual data input easier
 ![Making Casual Data Grabbing easier](tribble_paste.gif)
 
-3. Use Gadgets and Addins
+3. Gadgets and Addins to explort & manage R environment
 ============
 - Shiny gadgets: http://shiny.rstudio.com/articles/gadgets.html
 - Rstudio add-ins: https://github.com/daattali/addinslist
@@ -62,7 +62,7 @@ Talk about some very different use cases for Shiny
 + **addinslist** - (Naturally) a way to browse and instal AddIns
 + **copydat** - Copy a data.frame to the clipboard
 
-4. Exploration should be as easy as...
+4. Exploration should be just as easy as...
 ========
 
 ![alt text](NewShinyWebAppDialog.jpg)
